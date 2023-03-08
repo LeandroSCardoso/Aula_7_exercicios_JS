@@ -2,21 +2,37 @@
 function ajusta_titulo() {
     let tipo = document.querySelector('input[name="selecionado"]:checked').id;
     let resultado = "";
+    let pegadiv = "";
   
     if (tipo === "imprimepares") {
         resultado = document.getElementById("tit_func")
-        resultado.innerText = "Campos não utilizados na função selecionada"
+        resultado.innerText = ""
+        //ocultando div
+        pegadiv = document.getElementById("div-dir");
+        pegadiv.style.display = 'none';  
       }
 
      else if (tipo === "calculaMedia") {
         resultado = document.getElementById("tit_func")
         resultado.innerText = "Informe três valores nos campos abaixo para obter a média."
+        //Exibindo div
+        pegadiv = document.getElementById("div-dir")
+        pegadiv.style.display = 'inline' 
+        //exibindo terceiro campo
+        pegadiv = document.getElementById("cmp3")
+        pegadiv.style.display = 'inline'            
       }
 
 
       else if (tipo === "menorNumero") {
         resultado = document.getElementById("tit_func")
-        resultado.innerText = "Informe dois numeros utilizando o primeiro e segundo campo abaixo para descobrir qual o menor deles."
+        resultado.innerText = "Informe dois numeros nos campos abaixo para descobrir qual o menor deles."
+        //Exibindo div
+        pegadiv = document.getElementById("div-dir")
+        pegadiv.style.display = 'inline' 
+        //ocultando terceiro campo
+        pegadiv = document.getElementById("cmp3")
+        pegadiv.style.display = 'none'                
       } 
       
       //RESETANDO O CAMPO DE RESULTADO

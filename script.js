@@ -23,3 +23,38 @@ function somar_ex() {
       resultado.innerText = "Total da Soma: " + total   
     } 
 }
+
+
+function executa() {
+    let tipo = document.querySelector('input[name="selecionado"]:checked').id;
+    let resultado = "";
+  
+    if (tipo === "imprimepares") {
+      for (let i = 2; i <= 100; i += 2) {
+        resultado += i + " ";
+      }
+
+    } else if (tipo === "impares") {
+      for (let i = 1; i <= 100; i += 2) {
+        resultado += i + " ";
+      }
+    }
+  
+    document.getElementById("total_ex_1").innerText = 'Calculo: ' + resultado;
+  }
+
+  function ajusta_titulo() {
+    let tipo = document.querySelector('input[name="selecionado"]:checked').id;
+    let resultado = "";
+  
+    if (tipo === "imprimepares") {
+        resultado = document.getElementById("tit_func")
+        resultado.innerText = "Campos não utilizados na função selecionada"
+      }
+
+     else if (tipo === "calculaMedia") {
+        resultado = document.getElementById("tit_func")
+        resultado.innerText = "Informe três valores nos campos abaixo para obter a média."
+      }
+    }
+  

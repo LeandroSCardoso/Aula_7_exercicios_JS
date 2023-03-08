@@ -16,20 +16,54 @@
         <header class="topo">
             <p class="espac">Exercício 3</p>
         </header>
-<!--         <aside>
+
+       <!--  MENU DE ESCOLHA DE FUNÇÕES -->
+        <div  class="div-esq">
             <ul>
-                <li class="nada"><p>Somando Valores</p></li>
-                <li class="nada"><input type="text" id="val1" name="" placeholder="Digite um valor"></li>
-                <li class="nada"><input type="text" id="val2" name="" placeholder="Digite outro valor"></li>
-                <li class="nada"><input type="text" id="val3" name="" placeholder="Digite mais um valor"></li>
-                <li class="nada"><button onclick="somar_ex01()" id="btn_somar_ex01">Somar</button></li>
+                <li class="nada">
+                    <p>Escolha a função:</p>
+                </li>
+                <li class="nada">
+
+                    <input onclick="ajusta_titulo()" type="radio" name="selecionado" id="imprimepares">
+                    Imprimir pares
+
+                </li>
+                <li class="nada">
+
+                    <input onclick="ajusta_titulo()" type="radio" name="selecionado" id="calculaMedia">
+                    Imprimir ímpares
+
+                </li>
+                <button onclick="executa()" id="btn_executa">Executa Função</button>
+
+            </ul>
+         </div>
+
+        <!--  CAMPOS ÚTEIS CASO SEJA NECESSÁRIO NA FUNÇÃO -->
+        <div class="div-dir"> 
+            <ul>
+                <li class="nada">
+                    <p id="tit_func">Campos úteis</p>
+                </li>
+
+                <li class="nada">
+                    <input onkeyup="somar_ex()" type="text" id="val1" name="" placeholder="Digite um valor">
+                </li>
+
+                <li class="nada">
+                    <input onkeyup="somar_ex()" type="text" id="val2" name="" placeholder="Digite outro valor">
+                </li>
+
+                <li class="nada">
+                    <input onkeyup="somar_ex()" type="text" id="val3" name="" placeholder="Digite mais um valor">
+                </li>
             </ul>
 
-            <div class="ex_result" id="total_ex_1">
-                Total da Soma:
-            </div>
-        </aside> -->
-
+        </div>
+        <div class="ex_result" id="total_ex_1">
+            Resultado:
+        </div>
 
 
         <!-- Rodapé -->

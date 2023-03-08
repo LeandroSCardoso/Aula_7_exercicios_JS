@@ -98,7 +98,7 @@ function executa() {
         //VALIDANDO A SAIDA
         if (isNaN(total)) {
             const resultado = document.getElementById("total_ex_1")
-            resultado.innerText = "Impossível somar, utilize apenas numeros" 
+            resultado.innerText = "Impossível calcular, utilize apenas numeros" 
         }
         else {
         const resultado = document.getElementById("total_ex_1")

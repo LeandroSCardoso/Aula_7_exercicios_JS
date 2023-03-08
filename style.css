@@ -28,6 +28,18 @@ header {
     margin-left: 10px;
 }
 
+aside {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+}
+
+li.nada {
+  list-style-type: none;
+  margin: 10px 10px 10px -10px ;
+}
+
 .ls {
     display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,7 +67,8 @@ img {
 }
 
 input,
-select {
+select,
+button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
@@ -75,18 +88,21 @@ h1 {
 }
 
 
-p {
+p, .ex_result {
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
+    color: darkred;
 }
 
 p.espac {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     margin: 20px;
     font-size: 40px;
     color: darkred;
 }
+
 
 li {
     margin: 10px;

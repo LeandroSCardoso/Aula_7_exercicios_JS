@@ -1,6 +1,6 @@
 //FUNÇÃO PARA AJUSTAR OS TITULOS DOS 3 CAMPOS INPUT
 function ajusta_titulo() {
-    let tipo = document.querySelector('input[name="selecionado"]:checked').id;
+    let tipo = document.querySelector('input[name="selecionado"]:checked').id
     let resultado = "";
     let pegadiv = "";
   
@@ -116,7 +116,7 @@ function somar_ex() {
 function executa() {
 
     //DESCOBRINDO QUAL FUNÇÃO ESCOLHIDA
-    let tipo = document.querySelector('input[name="selecionado"]:checked').id;
+    let tipo = document.querySelector('input[name="selecionado"]:checked').id
     
 
 
@@ -247,21 +247,21 @@ function executa() {
 
     //COMO É PARA APRENZIDADO VOU MANTER A FORMA MAIS NA MÃO QUE SERIA COM DUAS ARRAYS
 
-    const dados = [12, 9, 7, 4, 1];
-    const arrayInvertida = inverteArray(dados);
+    const dados = [12, 9, 7, 4, 1]
+    const arrayInvertida = inverteArray(dados)
     //console.log(arrayInvertida); // Resultado: [1,4,7,9,12]
 
     function inverteArray(arr) {
         const tamanho = arr.length;
-        const arrayInvertida = new Array(tamanho);
+        const arrayInvertida = new Array(tamanho)
       
         for (let i = 0; i < tamanho; i++) {
-          arrayInvertida[i] = arr[tamanho - i - 1];
+          arrayInvertida[i] = arr[tamanho - i - 1]
         }
       
         // return arrayInvertida;
         const resultado = document.getElementById("total_ex_1")
-        resultado.innerText = `Array invertida fica: [${arrayInvertida}]`; 
+        resultado.innerText = `Array invertida fica: [${arrayInvertida}]` 
       }
     }
     //INVERTENDO UMA ARRAY - FINAL ---------------------------------------------------------------------------------------------

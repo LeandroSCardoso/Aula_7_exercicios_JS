@@ -55,6 +55,12 @@ li.nada {
   margin: 10px 10px 10px -10px ;
 }
 
+li.sup {
+    list-style-type: none;
+    margin: 10px 10px 10px -10px ;
+    display: block;
+  }
+
 .ls {
     display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
